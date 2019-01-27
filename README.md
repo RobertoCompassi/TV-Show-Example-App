@@ -27,7 +27,7 @@ $ sass --watch assets/scss/application.scss:assets/css/style.css --style compres
 
 ## Application on Github Pages
 
-[Published version of the application](https://#)
+[Published version of the application](https://robertocompassi.github.io/frontendtest)
 ## Notes
  - Some TV program details such as rating, country and percentage of indication were not available on the returned JSON object, so I chose not to show it on screen.
  - I have not used an MV * framewok as an Angular or library as jQuery to demonstrate the use of pure JavaScript.
