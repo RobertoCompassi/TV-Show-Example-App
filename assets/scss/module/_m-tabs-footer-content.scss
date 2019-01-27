@@ -1,0 +1,75 @@
+$parentPaddingTop: 5vh;
+.detalis__telecineLogo{
+    position: absolute; 
+    right: $paddingRight;
+}
+
+.m-details-content-tab{
+    display: inline-block;
+    position: relative;
+    width: calc(100vw - 6.50rem);
+    padding-top: 1.2rem;
+    &__content{
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+    .unavailable{
+        position: relative;
+        &__img-icon{
+            float: left;
+            margin-right: 1rem;
+        }
+        &__text{
+            float: left;
+            line-height: 2.3rem;
+            font-size: 1.5em;
+        }
+    }
+}
+
+.m-general-controls{
+    width: 35%;
+    float: left;
+    .options-list{
+        list-style: none;
+        margin-top: 10px;
+        &__item{
+            display: inline-block;
+            width: 24%;
+            &__link{
+                display: block;
+                color: #9B9B9B;
+                text-align: center;
+                &__image{
+                    display: block;
+                    margin: 0 auto;
+
+                }
+                &__text{
+                    display: block;
+                    margin-top: 0.45rem;
+                    font-size: 1.1em;
+                }
+            }
+        }
+    }
+}
+
+.m-general-synopsis{
+    display: inline-block;
+    color: #cecece;
+    width: 65%;
+    white-space: normal;
+    padding-left: 1.5rem;
+    
+    .synopsis__title{
+        font-weight: 300;
+        line-height: 0.4em;
+    }
+    .synopsis__text{
+        font-weight: 300;
+        font-size: 1.1em;
+    }
+}

@@ -1,0 +1,14 @@
+.l-seasonsContainer{
+    position: fixed;
+    right: -33%;
+    top: 0;
+    width: 33%;
+    display: block;
+    float: right;
+    background: linear-gradient(to left, #000000f2, #00000005);;
+    z-index: 1;
+    height: 80vh;
+    padding-top: $paddingTop + 1rem;
+    padding-right: $paddingRight;
+    
+}

@@ -1,0 +1,10 @@
+.season__list{
+    display: none;
+    transition: all 0.2s ease-in-out;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 57vh;
+    &.season--selected{
+        display: block;
+    }
+}

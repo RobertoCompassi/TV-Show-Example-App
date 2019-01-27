@@ -1,0 +1,250 @@
+/* =======================
+ States Rules
+==========================*/
+.l-seasonsContainer,
+.l-wrapper{
+    transition: all 0.5s ease-in-out;
+}
+.erro-load{
+    padding: 40vh;
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+
+.btn{
+    
+    &--close{
+        transition: all 0.2s ease-in-out;
+        &:hover{
+            transform: scale(1.1) ;
+        }
+    }
+}
+.episode__details{
+    transition: height 0.2s linear;
+    &__thumb{
+        cursor: pointer;
+    }
+    
+}
+.episode--open{
+    .episode__details{
+        height: calc(19rem);
+        display: block;
+        transition: height 0.2s linear;
+    }
+}
+
+.season__select__tab{
+    transition: all 0.1s linear;
+    cursor: pointer;
+    &:hover{
+        border-bottom: 3px solid #52a977;
+        background-color: #52a977;
+        color: #fff;
+    }
+}
+.episode__header{
+    .episode__header__title{
+        transition: all 0.1s ease-in-out;
+    }
+    &:hover{
+        cursor: pointer;
+        .episode__header__title{
+            transform: scale(1.04);
+        }
+    }
+    .btn--play{
+        transition: all 0.2s ease-in-out;
+    }
+    .btn--play:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+}
+.details__tabs{
+    &__tab{
+        transition: all 0.1s ease-in-out;
+        &:hover{
+            color: #fff;
+            cursor: pointer;
+            border-bottom: 3px solid #52a977;
+        }
+    }
+    &:hover{
+        .tab--enable{
+            border-color: transparent;
+        }
+        .tab--enable:hover{
+            border-bottom: 3px solid #52a977;
+        }
+    }
+}
+.m-general-controls ul li a{
+    transition: all 0.1s ease-in-out;
+    &:hover{
+        transform: scale(1.1);
+        color: #fff;
+    }
+}
+.m-details-content-tab{
+    transition: transform 0.4s ease-in-out;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: gray; 
+    border-radius: 10px;
+  }
+  $tabletWidth : 770px;
+  $smartPhoneWidth: 667px;
+
+@media screen and (max-width: $tabletWidth) {
+    .l-seasonsContainer{
+        width: 50%;
+        right: -50%;
+    }
+    .main__header{
+        width: 50%;
+    }
+    .m-general-controls{
+        width: 50%;
+        .options-list{
+            &__item{
+                &__link{
+                    &__text{
+                        font-size: 0.9em;
+                    }
+                }
+            }
+        }
+        
+    }
+    .m-general-synopsis{
+        width: 50%;
+        .synopsis__text{
+            font-size: 0.8em;
+        }
+        
+    }
+    .episode{
+        &__details{
+            &__thumb{
+                min-height: 180px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $smartPhoneWidth) {
+    $paddingTop: 1rem;
+    $paddingLeft: 1.25rem;
+    $paddingRight: $paddingLeft;
+
+    .l-seasonsContainer{
+        width: 100%;
+        right: -100%;
+        background: none;
+        padding-right: 0;
+        padding-top: 4.5rem;
+    }
+    .main__header{
+        padding-top: $paddingTop;
+        padding-left: $paddingLeft;
+        width: 100%;
+        &__title{
+            font-size: 1.5em;
+        }
+    }
+    .m-details-content-tab,
+    .l-details-content-group{
+        width: 100%;
+    }
+    .m-details-content-tab{
+        display: none;
+        transition: none;
+        
+        &.content--enable{
+            display: block;
+            transform: translateX(0px) !important; 
+        }
+        &[data-tab-content="1"]{
+            height: 22vh;
+            overflow-y: scroll;
+        }
+    }
+    
+    .m-general-controls{
+        width: 100%;
+        float: none;
+        .options-list{
+            &__item{
+                &__link{
+                    &__text{
+                        font-size: 0.9em;
+                    }
+                }
+            }
+        }
+    }
+    .m-general-synopsis{
+        width: 100%;
+        float: none;
+        padding-left: $paddingLeft;
+        padding-top: 1rem;
+        .synopsis__text{
+            font-size: 0.8em;
+            padding-top: 0.2rem;
+            padding-bottom: 2rem;
+        }
+    }
+    .episode{
+        &__details{
+            &__thumb{
+                min-height: 150px;
+            }
+        }
+    }
+    .l-detailsContainer{
+        padding: 0.5em;
+        padding-top: 0px;
+    }
+    .details__tabs{
+        &__tab{
+            width: 32%;
+            padding: 0px;
+            font-size: 0.7em;
+            text-align: center;
+            height: 4em;
+            line-height: 4em;
+            &:last-child{
+                line-height: 1.0em;
+                padding-top: 1em;
+            }
+            &.tab--enable{
+                border-bottom: 0px !important;
+            }
+        }
+    }
+    .detalis__telecineLogo{
+        display: none;
+    }
+    .btn--close{
+        margin: 0.8em;
+    }
+    #main-cast{
+        width: calc(100vw - 1em);
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding-bottom: 20px;
+    }
+}

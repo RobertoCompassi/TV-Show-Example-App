@@ -1,0 +1,12 @@
+.cast{
+    list-style: none;
+    &__actor{
+        display: inline-block;
+        background-color: #3c3c3c;
+        margin-right: 1rem;
+        padding: 2rem;
+        color: #d6d6d6;
+        font-weight: 700;
+        font-size: 1.15em;
+    }
+}

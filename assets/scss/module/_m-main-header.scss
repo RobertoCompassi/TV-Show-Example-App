@@ -1,0 +1,9 @@
+.m-main{
+    &__header{
+        &__details{
+            &__item{
+                text-transform: uppercase;
+            }
+        }
+    }
+}

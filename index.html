@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Roberto Compassi Test for Agile Content</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+    <div class="l-wrapper">
+        <a href="#" class="btn--close" aria-label="Close"></a>
+        <div id="main" class="l-main">
+            <div class="l-main__overlay">
+                <div class="main__header">
+                    <h2 class="main__header__title"></h2>
+                    <p class="main__header__details text-upper"></p>
+                </div>
+                <div id="seasonsContainer" class="l-seasonsContainer">
+                    <ul class="season__select" id="seasonSelect"></ul>
+                </div>
+            </div>
+        </div>
+        <div id="tvShowDetailsContainer" class="l-detailsContainer">
+            <img src="assets/images/logo-telecine.svg" alt="Telecine" class="detalis__telecineLogo">
+            <ul class="details__tabs">
+                <li class="details__tabs__tab text-upper tab--enable" data-tab="1">General</li>
+                <li class="details__tabs__tab text-upper" data-tab="2">Elenco</li>
+                <li class="details__tabs__tab text-upper" data-tab="3">Principales Premios</li>
+            </ul>
+            <div class="l-details-content-group">
+                    <div class="m-details-content-tab content--enable" data-tab-content="1">
+                        <div class="m-general-controls">
+                            <ul class="options-list">
+                                <li class="options-list__item"><a href="#" class="options-list__item__link"><img src="assets/images/add-gray-s.svg" alt="Mi Lista Button" class="options-list__item__link__image"><span class="options-list__item__link__text">Mi Lista</span></a></li>
+                                <li class="options-list__item"><a href="#" class="options-list__item__link"><img src="assets/images/sad-gray-w.svg" alt="Evaluar Button" class="options-list__item__link__image"><span class="options-list__item__link__text">Evaluar</span></a></li>
+                                <li class="options-list__item"><a href="#" class="options-list__item__link"><img src="assets/images/rec-gray-s.svg" alt="Grabar Button" class="options-list__item__link__image"><span class="options-list__item__link__text">Grabar</span></a></li>
+                                <li class="options-list__item"><a href="#" class="options-list__item__link"><img src="assets/images/share-gray-s.svg" alt="Compartir Button" class="options-list__item__link__image"><span class="options-list__item__link__text">Compartir</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="m-general-synopsis">
+                            <strong class="synopsis__title">SINOPSE</strong>
+                            <p class="synopsis__text"></p>
+                        </div>
+                    </div>
+                    <div class="m-details-content-tab" data-tab-content="2">
+                        <div class="m-details-content-tab__content">
+                            <div id="main-cast" class="cast"></div>
+                        </div>
+                    </div>
+                    <div class="m-details-content-tab" data-tab-content="3">
+                        <div class="unavailable">
+                            <img src="assets/images/sad-gray-w.svg" alt="Sad Smile" class="unavailable__img-icon">
+                            <p class="unavailable__text"> Information not available</p>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

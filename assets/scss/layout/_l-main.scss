@@ -1,0 +1,18 @@
+
+
+.l-main{
+    display: inline-block;
+    background-size: cover;
+    background-position: top;
+    height: $sizeMainHeight;
+    width: $sizeMainWidth;
+    -webkit-transition: background-image 1s ease-in-out;
+    transition: background-image 1s ease-in-out;
+    &__overlay{
+        background: #4ECDC4;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to top, #000000, #00000052);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, #000000, #00000052);
+        height: $sizeMainHeight;
+        width: $sizeMainWidth; 
+    }
+}

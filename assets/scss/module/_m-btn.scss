@@ -1,0 +1,32 @@
+ $btnPlaySize: 30px;
+ 
+ .btn{
+    display: block;
+    &--play{
+        background: transparent;
+        background-image: url(../../assets/images/play-small-player-w.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: $btnPlaySize;
+        height: $btnPlaySize;
+        border: 0px;
+        border-radius: 0px;
+        margin-top: 1rem;
+    }
+    &--close{
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: transparent;
+        background-image: url(../../assets/images/close-search-w.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 20px;
+        height: 20px;
+        border: 0px;
+        border-radius: 0px;
+        margin-right: $paddingRight;
+        margin-top: $paddingTop;
+        z-index: 4;
+    }
+ }  

@@ -1,0 +1,13 @@
+.season__select{
+    list-style: none;
+    border-bottom: 1px solid #a2a5aa59;
+    &__tab{
+        display: inline-block;
+        color: #dee0e2;
+        padding: 1rem 2rem;
+        font-weight: 600;
+        &.season--enable{
+            border-bottom: 3px solid #52a977;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.main__header{
+    padding: $paddingTop $paddingLeft;
+    &__title{
+        color: #fefdff;
+        font-weight: 700;
+        font-size: 3.4em;
+        line-height: 1.1em;
+    }
+    &__details{
+        &__item{
+            font-weight: 100;
+            font-size: 1.1em;
+            color: #d0d0d0;
+            &::after{
+                display: inline-block;
+                content: "/";
+                margin: 0px 7px;
+            }
+            &:last-child::after{
+                display: none;
+            }
+        }
+    }
+}

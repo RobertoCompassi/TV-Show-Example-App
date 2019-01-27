@@ -1,0 +1,19 @@
+$colorFooter: #15161A;
+
+.l-detailsContainer{
+    background-color: $colorFooter;
+    color: $footerTextColor;
+    width: 100%;
+    display: inline-block;
+    height: $sizeFooterHeight;
+    padding: 2.2rem $paddingLeft; 
+    position: relative;
+    z-index: 3;
+}
+
+.l-details-content-group{
+    width: calc(100vw - 6.50rem);
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
