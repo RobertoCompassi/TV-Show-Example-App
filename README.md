@@ -1,4 +1,4 @@
-# Frontend Developer Test for Agile Content
+# Frontend Developer Example for TV Show App
 ##### Developed by Roberto Compassi in São José do Rio Preto - SP, Brazil
 
 This is a practical test implementing a navigation screen of an application for streaming tv shows. For the realization of this project it was only used HTML5, pre-processed CSS (SCSS), pure JavaScript applying ECMAScript6.
