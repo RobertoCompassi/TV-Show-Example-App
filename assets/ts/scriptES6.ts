@@ -1,10 +1,4 @@
 /**
- * @author: Roberto Compassi from São José do Rio Preto - SP, Brazil
- * @description: JavaScript file for control and manipulation of
- *  DOM elements executing http requests for details of the TV 
- * program and its epsodios when available. 
- * This code uses pure JavaScript only with the EcmaScript6 updates. 
- * Compiled with MS TypeScript TSC was generated to generate compiled .js file.
  * 
  *      use the command to compile in the correct folder: 
  *      tsc --lib dom,es6 --out assets/js/script.js assets/ts/scriptES6.ts
